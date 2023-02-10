@@ -1,0 +1,18 @@
+.nav_link_logo {
+  margin-right: 93px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
+  transition: color 250ms var(--timing-function);
+}
+.nav_link_logo .current:hover,
+.nav_link_logo .current:focus {
+  color: var(--background-color-even);
+}
+.nav_link_logo .current {
+  color: var(--color-action);
+}
