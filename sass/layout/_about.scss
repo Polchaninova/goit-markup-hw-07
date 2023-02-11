@@ -1,0 +1,39 @@
+.about_item {
+  display: flex;
+}
+.about_list_feature:not(:last-of-type) {
+  margin-right: 30px;
+}
+.about_list_feature {
+  max-width: 270px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* 4e */
+.about_link_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-background-brand);
+  border-radius: 4px;
+}
+
+.about_feature_title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  color: var(--color-primary);
+}
+.descript_text {
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: var(--color-text-deck);
+}
