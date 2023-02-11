@@ -50,18 +50,19 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--color-background-primary);
+  transition: fill 250ms var(--timing-function);
 }
 
+.btn_close_modal:hover,
+.btn_close_modal:focus {
+  fill: var(--color-action);
+}
 .modal_svg_close {
   width: 18px;
   height: 18px;
   transition: fill 250ms var(--timing-function);
 }
 
-.modal_svg_close:hover,
-.modal_svg_close:focus {
-  fill: var(--color-action);
-}
 .form {
   font-family: "Roboto";
 }
