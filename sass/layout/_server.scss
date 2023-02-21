@@ -56,15 +56,18 @@
   background: var(--color-background-primary);
   border: 1px solid var(--color-border-one);
   border-top: none;
+
+  .server_card:hover &,
+  .server_card:focus & {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
+
 .server_card {
   transition: box-shadow 250ms var(--timing-function);
 }
-.server_card:hover .card_border,
-.server_card:focus .card_border {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .server_card .server_img,
 .server_card .card_border {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.06);
@@ -77,12 +80,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* 
-.server_item:hover,
-.server_item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 .server_menu_title {
   margin-bottom: 4px;
 

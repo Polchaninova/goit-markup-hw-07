@@ -1,4 +1,4 @@
-.nav_link_logo {
+.nav-logo__link {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -9,10 +9,12 @@
   color: var(--color-primary);
   transition: color 250ms var(--timing-function);
 }
-.nav_link_logo .current:hover,
-.nav_link_logo .current:focus {
-  color: var(--background-color-even);
-}
-.nav_link_logo .current {
+
+.current {
   color: var(--color-action);
+
+  &:hover,
+  &:focus {
+    color: var(--background-color-even);
+  }
 }

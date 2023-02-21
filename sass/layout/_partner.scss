@@ -17,10 +17,11 @@
 
   border: 1px solid var(--color-fill-svg);
   transition: border 250ms var(--timing-function);
-}
-.partner_item:hover .partner_link,
-.partner_item:focus .partner_link {
-  border: 1px solid var(--color-action);
+
+  .partner_item:hover &,
+  .partner_item:focus & {
+    border: 1px solid var(--color-action);
+  }
 }
 
 .partner_item:not(:last-of-type) {
@@ -32,8 +33,9 @@
   height: 60px;
   fill: var(--color-fill-svg);
   transition: fill 250ms var(--timing-function);
-}
-.partner_link:hover .partner_icon,
-.partner_link:focus .partner_icon {
-  fill: var(--color-action);
+
+  .partner_link:hover &,
+  .partner_link:focus & {
+    fill: var(--color-action);
+  }
 }

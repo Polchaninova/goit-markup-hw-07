@@ -30,36 +30,40 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a class="nav_link_logo" href="./index.html"
-            ><span class="current">Web</span>Studio</a
-          >
-          <ul class="nav-item">
-            <li class="nav_list">
-              <a class="nav_link_menu" href="./index.html">Студія</a>
-            </li>
-            <li class="nav_list">
-              <a class="nav_link_menu current lineal" href="portfolio.html"
-                >Портфоліо</a
+          <a class="nav-logo__link" href="./index.html">
+            <span class="current">Web</span>Studio
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link current lineal" href="./index.html"
+                >Студія</a
               >
             </li>
-            <li class="nav_list">
-              <a class="nav_link_menu" href="#">Контакти</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contact">
-          <li class="header_list_email">
-            <a class="header_link_email" href="mailto:info@devstudio.com">
-              <svg class="email-img" width="16" height="12">
+          <li class="header-contact__email">
+            <a
+              class="header-contact__link-email"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contact__email-img" width="16" height="12">
                 <use href="./image/sprite.svg#icon-header-mail"></use>
               </svg>
 
               info@devstudio.com</a
             >
           </li>
-          <li class="header_list_tel">
-            <a class="header_link_tel" href="tel:+380961111111">
-              <svg class="email-tel" width="10" height="16">
+          <li class="header-contact__tel">
+            <a class="header-contact__link-tel" href="tel:+380961111111">
+              <svg class="header-contact__tel-img" width="10" height="16">
                 <use href="./image/sprite.svg#icon-header-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -71,22 +75,22 @@
     <main>
       <section class="services section">
         <div class="container">
-          <h2 class="services_title visually-hidden">Наші Послуги</h2>
-          <ul class="services_list">
-            <li class="services_item_btn">
-              <button type="button" class="services_btn current">Усі</button>
+          <h2 class="services__title visually-hidden">Наші Послуги</h2>
+          <ul class="services-list">
+            <li class="services-list__item">
+              <button type="button" class="services-button current">Усі</button>
             </li>
-            <li class="services_item_btn">
-              <button type="button" class="services_btn">Веб-сайти</button>
+            <li class="services-list__item">
+              <button type="button" class="services-button">Веб-сайти</button>
             </li>
-            <li class="services_item_btn">
-              <button type="button" class="services_btn">Додатки</button>
+            <li class="services-list__item">
+              <button type="button" class="services-button">Додатки</button>
             </li>
-            <li class="services_item_btn">
-              <button type="button" class="services_btn">Дизайн</button>
+            <li class="services-list__item">
+              <button type="button" class="services-button">Дизайн</button>
             </li>
-            <li class="services_item_btn">
-              <button type="button" class="services_btn">Маркетинг</button>
+            <li class="services-list__item">
+              <button type="button" class="services-button">Маркетинг</button>
             </li>
           </ul>
           <ul class="server_menu">

@@ -23,10 +23,12 @@ address {
   line-height: 1;
   letter-spacing: 0.03em;
   color: var(--color-invert);
+
+  .current {
+    color: var(--color-action);
+  }
 }
-.footer_logo_link .current {
-  color: var(--color-action);
-}
+
 .address_list {
   padding-left: 0;
   display: flex;
@@ -85,11 +87,13 @@ address {
   background-color: transparent;
   color: var(--color-invert);
   transition: border-color 250ms var(--timing-function);
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-action);
+  }
 }
-.footer_form_input:focus {
-  outline: none;
-  border-color: var(--color-action);
-}
+
 .footer_form_input::placeholder {
   color: var(--color-invert);
 }
@@ -112,12 +116,13 @@ address {
   line-height: 1.8;
   letter-spacing: 0.06em;
   transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-color-even);
+  }
 }
 
-.footer_form_btn:hover,
-.footer_form_btn:focus {
-  background-color: var(--background-color-even);
-}
 .footer_form_icon {
   position: absolute;
   top: 50%;
@@ -158,8 +163,9 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--color-invert);
   transition: background-color 250ms var(--timing-function);
-}
-.social_link:hover,
-.social_link:focus {
-  background-color: var(--color-action);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-action);
+  }
 }

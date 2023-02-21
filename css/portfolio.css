@@ -82,7 +82,7 @@ img {
   padding-right: 15px;
 }
 
-.nav_link_logo {
+.nav-logo__link {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -93,13 +93,11 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.nav_link_logo .current:hover,
-.nav_link_logo .current:focus {
-  color: var(--background-color-even);
-}
-
-.nav_link_logo .current {
+.current {
   color: var(--color-action);
+}
+.current:hover, .current:focus {
+  color: var(--background-color-even);
 }
 
 .team_list_icon {
@@ -118,9 +116,7 @@ img {
   background-color: var(--color-background-primary);
   transition: background-color 250ms var(--timing-function);
 }
-
-.teams_link_icon:hover,
-.teams_link_icon:focus {
+.teams_link_icon:hover, .teams_link_icon:focus {
   background-color: var(--color-action);
 }
 
@@ -128,9 +124,7 @@ img {
   fill: var(--color-fill-svg);
   transition: fill 250ms var(--timing-function);
 }
-
-.teams_link_icon:hover .teams_icon,
-.teams_link_icon:focus .teams_icon {
+.teams_link_icon:hover .teams_icon, .teams_link_icon:focus .teams_icon {
   fill: var(--color-background-primary);
 }
 
@@ -153,11 +147,11 @@ img {
   padding-left: 0;
 }
 
-.nav-item {
+.nav-list {
   display: flex;
 }
 
-.nav_link_menu {
+.nav-list__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -169,9 +163,11 @@ img {
   letter-spacing: 0.02em;
   transition: color 250ms var(--timing-function);
 }
-
-.nav_link_menu.current {
+.nav-list__link .current {
   color: var(--color-action);
+}
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--background-color-even);
 }
 
 .nav_link_menu.current.lineal::after {
@@ -186,13 +182,8 @@ img {
   /* transition: opacity 250ms var(--timing-function); */
 }
 
-.nav_list:not(:last-of-type) {
+.nav-list__item:not(:last-of-type) {
   margin-right: 50px;
-}
-
-.nav_list .nav_link_menu:hover,
-.nav_list .nav_link_menu:focus {
-  color: var(--background-color-even);
 }
 
 .header-contact {
@@ -202,25 +193,25 @@ img {
   margin-left: auto;
 }
 
-.email-img,
-.email-tel {
+.header-contact__email-img,
+.header-contact__tel-img {
   margin-right: 10px;
   fill: var(--color-text-deck);
   transition: fill 250ms var(--timing-function);
 }
-
-.header_link_email:hover .email-img,
-.header_link_email:focus .email-img,
-.header_link_tel:hover .email-tel,
-.header_link_tel:focus .email-tel {
+.header-contact__link-email:hover .header-contact__email-img, .header-contact__link-email:focus .header-contact__email-img, .header-contact__link-tel:hover .header-contact__email-img, .header-contact__link-tel:focus .header-contact__email-img,
+.header-contact__link-email:hover .header-contact__tel-img,
+.header-contact__link-email:focus .header-contact__tel-img,
+.header-contact__link-tel:hover .header-contact__tel-img,
+.header-contact__link-tel:focus .header-contact__tel-img {
   fill: var(--color-action);
 }
 
-.header_list_email {
+.header-contact__email {
   margin-left: auto;
 }
 
-.header_link_email {
+.header-contact__link-email {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -231,11 +222,11 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header_list_tel {
+.header-contact__tel {
   margin-left: 30px;
 }
 
-.header_link_tel {
+.header-contact__link-tel {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -246,24 +237,24 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header_link_tel:hover,
-.header_link_email:hover,
-.header_link_tel:focus,
-.header_link_email:focus {
+.header-contact__link-tel:hover,
+.header-contact__link-email:hover,
+.header-contact__link-tel:focus,
+.header-contact__link-email:focus {
   color: var(--background-color-even);
 }
 
-.services_list {
+.services-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.services_item_btn:not(:last-of-type) {
+.services-list__item:not(:last-of-type) {
   margin-right: 10px;
 }
 
-.services_btn {
+.services-button {
   padding: 6px 26px;
   background: var(--color-background-brand);
   border: var(--color-background-brand);
@@ -275,9 +266,7 @@ img {
   color: var(--color-primary);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
-
-.services_btn:hover,
-.services_btn:focus {
+.services-button:hover, .services-button:focus {
   background: var(--color-background-action);
   color: var(--color-background-primary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -342,14 +331,12 @@ img {
   border: 1px solid var(--color-border-one);
   border-top: none;
 }
+.server_card:hover .card_border, .server_card:focus .card_border {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .server_card {
   transition: box-shadow 250ms var(--timing-function);
-}
-
-.server_card:hover .card_border,
-.server_card:focus .card_border {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .server_card .server_img,
@@ -363,12 +350,6 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* 
-.server_item:hover,
-.server_item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 .server_menu_title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -413,7 +394,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--color-invert);
 }
-
 .footer_logo_link .current {
   color: var(--color-action);
 }
@@ -477,7 +457,6 @@ address {
   color: var(--color-invert);
   transition: border-color 250ms var(--timing-function);
 }
-
 .footer_form_input:focus {
   outline: none;
   border-color: var(--color-action);
@@ -505,9 +484,7 @@ address {
   letter-spacing: 0.06em;
   transition: background-color 250ms var(--timing-function);
 }
-
-.footer_form_btn:hover,
-.footer_form_btn:focus {
+.footer_form_btn:hover, .footer_form_btn:focus {
   background-color: var(--background-color-even);
 }
 
@@ -553,8 +530,6 @@ address {
   fill: var(--color-invert);
   transition: background-color 250ms var(--timing-function);
 }
-
-.social_link:hover,
-.social_link:focus {
+.social_link:hover, .social_link:focus {
   background-color: var(--color-action);
 }/*# sourceMappingURL=portfolio.css.map */

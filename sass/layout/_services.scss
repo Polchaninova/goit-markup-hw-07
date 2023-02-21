@@ -1,12 +1,12 @@
-.services_list {
+.services-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.services_item_btn:not(:last-of-type) {
+.services-list__item:not(:last-of-type) {
   margin-right: 10px;
 }
-.services_btn {
+.services-button {
   padding: 6px 26px;
   background: var(--color-background-brand);
   border: var(--color-background-brand);
@@ -19,13 +19,14 @@
   color: var(--color-primary);
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-}
-.services_btn:hover,
-.services_btn:focus {
-  background: var(--color-background-action);
 
-  color: var(--color-background-primary);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background: var(--color-background-action);
+
+    color: var(--color-background-primary);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }

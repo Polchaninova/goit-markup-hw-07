@@ -1,17 +1,19 @@
-.about_item {
+.about-list {
   display: flex;
 }
-.about_list_feature:not(:last-of-type) {
-  margin-right: 30px;
-}
-.about_list_feature {
+
+.about-list__feature {
   max-width: 270px;
   text-align: left;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
 }
 /* 4e */
-.about_link_item {
+.feature {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +24,7 @@
   border-radius: 4px;
 }
 
-.about_feature_title {
+.about-list__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -31,7 +33,7 @@
 
   color: var(--color-primary);
 }
-.descript_text {
+.about-list__description {
   font-weight: 400;
   line-height: 1.7;
 

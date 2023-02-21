@@ -30,36 +30,40 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a class="nav_link_logo" href="./index.html"
-            ><span class="current">Web</span>Studio</a
-          >
-          <ul class="nav-item">
-            <li class="nav_list">
-              <a class="nav_link_menu current lineal" href="./index.html"
+          <a class="nav-logo__link" href="./index.html">
+            <span class="current">Web</span>Studio
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link current lineal" href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="nav_list">
-              <a class="nav_link_menu" href="portfolio.html">Портфоліо</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav_list">
-              <a class="nav_link_menu" href="#">Контакти</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contact">
-          <li class="header_list_email">
-            <a class="header_link_email" href="mailto:info@devstudio.com">
-              <svg class="email-img" width="16" height="12">
+          <li class="header-contact__email">
+            <a
+              class="header-contact__link-email"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contact__email-img" width="16" height="12">
                 <use href="./image/sprite.svg#icon-header-mail"></use>
               </svg>
 
               info@devstudio.com</a
             >
           </li>
-          <li class="header_list_tel">
-            <a class="header_link_tel" href="tel:+380961111111">
-              <svg class="email-tel" width="10" height="16">
+          <li class="header-contact__tel">
+            <a class="header-contact__link-tel" href="tel:+380961111111">
+              <svg class="header-contact__tel-img" width="10" height="16">
                 <use href="./image/sprite.svg#icon-header-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -71,60 +75,62 @@
     <main>
       <section class="contact">
         <div class="container contact_container">
-          <h1 class="contact_title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="contact_btn" type="button">
+          <h1 class="contact__title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="contact-btn" type="button">
             Замовити послугу
           </button>
         </div>
       </section>
       <section class="about section">
         <div class="container">
-          <h2 class="about_title visually-hidden">Наші переваги</h2>
-          <ul class="about_item">
-            <li class="about_list_feature">
-              <div class="about_link_item">
+          <h2 class="about__title visually-hidden">Наші переваги</h2>
+          <ul class="about-list">
+            <li class="about-list__feature">
+              <div class="feature">
                 <svg class="about_icon" width="70px" height="70px">
                   <use href="./image/sprite.svg#icon-section-antenna"></use>
                 </svg>
               </div>
-              <h3 class="about_feature_title">Увага до діталей</h3>
-              <p class="descript_text">
+
+              <h3 class="about-list__title">Увага до діталей</h3>
+              <p class="about-list__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="about_list_feature">
-              <div class="about_link_item">
-                <svg class="about_icon" width="70px" height="70px">
+
+            <li class="about-list__feature">
+              <div class="feature">
+                <svg class="feature__image" width="70px" height="70px">
                   <use href="./image/sprite.svg#icon-section-clock"></use>
                 </svg>
               </div>
-              <h3 class="about_feature_title">Пунктуальність</h3>
-              <p class="descript_text">
+              <h3 class="about-list__title">Пунктуальність</h3>
+              <p class="about-list__description">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="about_list_feature">
-              <div class="about_link_item">
-                <svg class="about_icon" width="70px" height="70px">
+            <li class="about-list__feature">
+              <div class="feature">
+                <svg class="feature__image" width="70px" height="70px">
                   <use href="./image/sprite.svg#icon-section-diagram"></use>
                 </svg>
               </div>
-              <h3 class="about_feature_title">Планування</h3>
-              <p class="descript_text">
+              <h3 class="about-list__title">Планування</h3>
+              <p class="about-list__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="about_list_feature">
-              <div class="about_link_item">
-                <svg class="about_icon" width="70px" height="70px">
+            <li class="about-list__feature">
+              <div class="feature">
+                <svg class="feature__image" width="70px" height="70px">
                   <use href="./image/sprite.svg#icon-section-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="about_feature_title">Сучасні технології</h3>
-              <p class="descript_text">
+              <h3 class="about-list__title">Сучасні технології</h3>
+              <p class="about-list__description">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -134,51 +140,51 @@
       </section>
       <section class="work">
         <div class="container">
-          <h2 class="work_title title">Чим ми займаємося</h2>
-          <ul class="work-item">
-            <li class="work_list_img">
-              <div class="work_relative_img">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="work-list">
+            <li class="work-list__item">
+              <div class="product">
                 <img
-                  class="work_picture_img"
+                  class="product__picture"
                   src="./image/code-on-tablet.jpg"
                   alt="programming on tablet"
                   width="370"
                   height="294"
                 />
-                <div class="work_absolute_title">
-                  <h3 class="about_feature_title work_feature_title">
+                <div class="product-title">
+                  <h3 class="about-list__title product-title__title">
                     Десктопні додатки
                   </h3>
                 </div>
               </div>
             </li>
-            <li class="work_list_img">
-              <div class="work_relative_img">
+            <li class="work-list__item">
+              <div class="product">
                 <img
-                  class="work_picture_img"
+                  class="product__picture"
                   src="./image/phone-on-laptop.jpg"
                   alt="programming on laptop"
                   width="370"
                   height="294"
                 />
-                <div class="work_absolute_title">
-                  <h3 class="about_feature_title work_feature_title">
+                <div class="product-title">
+                  <h3 class="about-list__title product-title__title">
                     Мобільні додатки
                   </h3>
                 </div>
               </div>
             </li>
-            <li class="work_list_img">
-              <div class="work_relative_img">
+            <li class="work-list__item">
+              <div class="product">
                 <img
-                  class="work_picture_img"
+                  class="product__picture"
                   src="./image/color-palette.jpg"
                   alt="color palette"
                   width="370"
                   height="294"
                 />
-                <div class="work_absolute_title">
-                  <h3 class="about_feature_title work_feature_title">
+                <div class="product-title">
+                  <h3 class="about-list__title product-title__title">
                     Дизайнерські рішення
                   </h3>
                 </div>

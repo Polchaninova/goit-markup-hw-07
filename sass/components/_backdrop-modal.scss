@@ -8,11 +8,12 @@
 
   transition: opacity 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -51,12 +52,13 @@
   border-radius: 50%;
   background-color: var(--color-background-primary);
   transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--color-action);
+  }
 }
 
-.btn_close_modal:hover,
-.btn_close_modal:focus {
-  fill: var(--color-action);
-}
 .modal_svg_close {
   width: 18px;
   height: 18px;
@@ -107,11 +109,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
-}
 
-.form_input:focus {
-  outline: none;
-  border-color: var(--color-action);
+  &:focus {
+    outline: none;
+    border-color: var(--color-action);
+  }
 }
 
 .icon_svg {
@@ -126,10 +128,10 @@
 
   fill: (--color-primary);
   transition: fill 250ms var(--timing-function);
-}
 
-.form_input:focus + .icon_svg {
-  fill: var(--color-action);
+  .form_input:focus + & {
+    fill: var(--color-action);
+  }
 }
 
 .form_textarea {
@@ -141,12 +143,13 @@
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
   resize: none;
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-action);
+  }
 }
 
-.form_textarea:focus {
-  outline: none;
-  border-color: var(--color-action);
-}
 .form_textarea:placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
@@ -234,8 +237,9 @@
     color 250ms var(--timing-function),
     border-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
-}
-.btn_submit:hover,
-.btn_submit :focus {
-  background-color: var(--background-color-even);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-color-even);
+  }
 }
