@@ -1,5 +1,5 @@
 .nav__logo {
-  font-family: "Raleway", sans-serif;
+  font-family: $font-accept;
   font-weight: 700;
   font-size: 26px;
   line-height: 1;
@@ -17,7 +17,6 @@
     color: var(--background-color-even);
   }
 }
-.nav__margin{
+.nav__margin {
   margin-right: 93px;
-
 }

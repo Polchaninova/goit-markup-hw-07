@@ -9,7 +9,7 @@ address {
 .footer-address {
   margin-right: 70px;
 }
-.address_list {
+.footer-address__list {
   display: block;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ address {
 .footer-address_color-invert {
   color: var(--color-invert);
 
-  // font-family: "Raleway", sans-serif;
+  // font-family: $font-accept;
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1;
@@ -147,7 +147,7 @@ address {
 }
 .footer_social_title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

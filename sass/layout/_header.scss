@@ -29,14 +29,17 @@
 
   transition: color 250ms var(--timing-function);
 
-  .current {
-    color: var(--color-action);
-  }
+  // .current {
+  //   color: var(--color-action);
+  // }
 
   &:hover,
   &:focus {
     color: var(--background-color-even);
   }
+}
+.current {
+  color: var(--color-action);
 }
 
 .nav_link_menu.current.lineal::after {
