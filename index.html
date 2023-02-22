@@ -30,7 +30,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a class="nav-logo__link" href="./index.html">
+          <a class="nav__logo" href="./index.html">
             <span class="current">Web</span>Studio
           </a>
 
@@ -74,7 +74,7 @@
     </header>
     <main>
       <section class="contact">
-        <div class="container contact_container">
+        <div class="container contact-container">
           <h1 class="contact__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="contact-btn" type="button">
             Замовити послугу
@@ -440,29 +440,33 @@
 
     <footer class="footer">
       <div class="container flex">
-        <div class="footer_address_container">
-          <a href="./index.html" class="footer_logo_link"
-            ><span class="footer_logo_link current">Web</span>Studio</a
+        <div class="footer-address">
+          <a
+            href="./index.html"
+            class="nav__logo footer-address_color-invert-margin"
+            ><span class="current">Web</span>Studio</a
           >
 
           <address>
-            <ul class="address_list">
-              <li class="address_city_item">
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
                 <a
-                  class="address_link"
+                  class="footer-address__link"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address_item">
-                <a class="footer_contact" href="mailto:info@devstudio.com"
+              <li class="footer-address__item">
+                <a
+                  class="footer-address__contact"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer_list_contact">
-                <a class="footer_contact" href="tel:+380961111111"
+              <li class="footer-address__item">
+                <a class="footer-address__contact" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>

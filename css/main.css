@@ -82,7 +82,7 @@ img {
   padding-right: 15px;
 }
 
-.nav-logo__link {
+.nav__logo {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -688,7 +688,7 @@ address {
   margin-top: 20px;
 }
 
-.footer_address_container {
+.footer-address {
   margin-right: 70px;
 }
 
@@ -697,35 +697,26 @@ address {
   font-style: normal;
 }
 
-.footer_logo_link {
+.footer-address_color-invert-margin {
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: 0.03em;
   color: var(--color-invert);
 }
-.footer_logo_link .current {
+.footer-address_color-invert-margin.current {
   color: var(--color-action);
 }
 
-.address_list {
+.footer-address__list {
   padding-left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.address_city_item {
+.footer-address__item {
   margin-bottom: 9px;
 }
 
-.address_item {
-  margin-bottom: 9px;
-}
-
-.address_link {
+.footer-address__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -733,7 +724,7 @@ address {
   color: var(--color-invert);
 }
 
-.footer_contact {
+.footer-address__contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
