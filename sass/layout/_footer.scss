@@ -14,8 +14,10 @@ address {
   font-style: normal;
 }
 
-.footer-address_color-invert-margin {
+.nav__margin {
   margin-bottom: 20px;
+}
+.footer-address_color-invert {
   color: var(--color-invert);
 
   // font-family: "Raleway", sans-serif;
